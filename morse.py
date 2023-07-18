@@ -108,6 +108,7 @@ MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
 
 class Solution:
     def encrypt(self, message):
+
             #type message: string
             #return type: string
 
@@ -124,7 +125,7 @@ class Solution:
 		return cipher
 
 
-            pass
+        pass
 
 def main():
      str1=input()
