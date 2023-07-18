@@ -112,18 +112,14 @@ class Solution:
             #return type: string
 
             #TODO: Write code below to return a string with the solution to the prompt.
-			new
-			for i in message:
-				if i != " ":
-					new+=i;
-
-			message = new
-			newmsg
+			message.replace(" ", "")
 			message = message.upper()
+			newmsg = ""
 			for i in message:
 				for j in MORSE_CODE_DICT:
 					if i == j:
-						nemsg+=MORSE_CODE_DICT[j]
+						newmsg+=MORSE_CODE_DICT[j]
+			return newmsg
 
             pass
 
