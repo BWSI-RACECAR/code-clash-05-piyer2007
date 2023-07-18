@@ -122,7 +122,7 @@ class Solution:
 def main():
     tr1=input()
     tc1= Solution()
-    ans=tc1.encrypt(r1)
+    ans=tc1.encrypt(tr1)
     print(ans)
 
 if __name__ == '__main__':
