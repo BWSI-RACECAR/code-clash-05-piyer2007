@@ -105,27 +105,25 @@ MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
 # Function to encrypt the string
 # according to MORSE_CODE_DICT
 ##########################################################################
-
 class Solution:
     def encrypt(self, message):
-			message = message.upper()
-			cipher = ""
+        message = message.upper()
+        cipher = ""
 
-			for i in message:
-				if (i != ' '):
-					cipher += MORSE_CODE_DICT[i] + ' '
-				else:
-					cipher+= ' '
-
-					return cipher
+        for i in message:
+            if (i != ' '):
+                cipher += MORSE_CODE_DICT[i] + ' '
+            else:
+                cipher+= ' '
+        return cipher
 
 
 
 def main():
-     str1=input()
-     tc1= Solution()
-     ans=tc1.encrypt(str1)
-     print(ans)
+    tr1=input()
+    tc1= Solution()
+    ans=tc1.encrypt(str1)
+    print(ans)
 
 if __name__ == '__main__':
     main()
